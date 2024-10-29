@@ -1,0 +1,804 @@
+{
+  "summary" : "This is a Python Tutorial for Beginners provided by the MRT / Karlsruhe Institute of Technology.",
+  "title" : "Python Tutorial for Beginners",
+  "programming_language" : "Python 3.x",
+  "language" : "en",
+  "course_type" : "PyCharm",
+  "items" : [
+    {
+      "title" : "Getting Started",
+      "task_list" : [
+        {
+          "name" : "task1",
+          "files" : {
+            "example.py" : {
+              "name" : "example.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "print(\"Hello, welcome to your beginner python tutorial!\")\n"
+            },
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [
+                {
+                  "offset" : 80,
+                  "length" : 31,
+                  "possible_answer" : "a = 0",
+                  "placeholder_text" : "Placeholder 1: Insert code here"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "# TODO: type solution here\n\n# This description is useless, but the hint is not.\nPlaceholder 1: Insert code here\n"
+            },
+            "tests.py" : {
+              "name" : "tests.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\n\n\ndef test_answer_placeholders():\n    placeholders = get_answer_placeholders()\n    placeholder = placeholders[0]\n    if placeholder.replace(\" \", \"\") == \"a=0\":\n        passed()\n    else:\n        failed()\n\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+            }
+          },
+          "description_text" : "<html>\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/KIT_text.png\" alt=\"KIT Logo\" style=\"max-height:100%;width:55%;height:auto;max-width:300px;\">\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/mrt.png\" alt=\"MRT Logo\" style=\"float:right;max-height:100%;width:37.125%;height:auto;max-width:200px;\">\n\n<h1>Python Tutorial for Beginners</h1>\n<h2>\n    Getting Started\n</h2>\n\nWelcome to our python tutorial for beginners!\nThe following information is\na help to solve the tasks and use our\nexample code for your personal understanding.\n<br>\n<br>\nIn each lesson you have one or more tasks.\nOn the left side you can see the tutorial\nstructure. The highest folder is this tutorial\nfollowed by the lessons. If you open one lesson,\nyou can find the different tasks. Inside each task\nis a file named <i>task.py</i>. You should write\nyour solution inside this file. Every task file\nhas placeholders with the same description.\nReplace these descriptions with your\nsolution.\nAbove these desciptions you will find #-symbols\nfollowed by text. The text is your description\nfor solving the task. The #-symbol is a symbol for\ncode comments. These comments will not be executed.\nThey are used for understanding the code.\n<br>\n<br>\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/Getting_Started_3.png\" style=\"width:90%;max-width:800px;\" alt=\"Getting Started 1\">\n<br>\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/Getting_Started_5.png\" style=\"width:90%;max-width:800px;\" alt=\"Getting Started 1\">\n<br>\n<br>\nInside some tasks there are also example files. Inside\nthese lessons you can find the file <i>example.py\n</i>. You can open this file and run the\nexample code by clicking <i>Execute 'example.py'\n</i> next to the code. You can also modify this\ncode and test around. For example you can write\nyour name after the word \"Hello\", like <i>\nprint(\"Hello Alfred, welcome...</i> and execute\nthe file again.\n<br>\n<br>\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/Getting_Started_4.png\" style=\"width:90%;max-width:800px;\" alt=\"Getting Started 2\">\n<br>\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/Getting_Started_6.png\" style=\"width:90%;max-width:800px;\" alt=\"Getting Started 2\">\n<br>\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/Getting_Started_7.png\" style=\"width:90%;max-width:800px;\" alt=\"Getting Started 2\">\n<br>\n<br>\nWhen you fully understand the examples, you are\nready for solving the task. Like explained\nabove, you will replace the descriptions. In this\nlesson the description is not helpful. Therefor you\nwill find hints below the exercise description.\nWhen you are ready to check your solution\nyou can click below on <i>Check</i>. If\nthere is a mistake, you also get additional\ninformation in a small text field next to the\ntask checking button.\nNot every placeholder has hints. But if you\nstick on a task, you can look if there is a hint\nand use it so solve the task. Furthermore\nit is also possible to try on the next task or\nlesson and finish later.\n\n<h4>\n    Exercise\n</h4>\n\nNow enough theory, let's try! Open the file\n<i>example.py</i> and execute it like explained\nabove. You should see a message on the python\nconsole. The console is for getting output from\nyour program. It can also be used for giving\nan input to your program. However, this feature\nwill not be used in this tutorial. Now try\nmodifying the message. Write your name after\nthe word \"Hello\" and execute the file again.\nThe message on the console is now another one.\n<br>\n<br>\nYou are now ready to solve the task. Open the\nfile <i>task.py</i>. There is one placeholder\nwith a useless description. In this case you\ncan open the hints. You can now see the solution.\nReplace the description with your solution and\ncheck if it passes the test.\n\n<details>\n<summary>Hint for Placeholder 1:</summary>\n<p>Write \"a = 0\" without the double quotes.</p>\n</details>\n\n<h4>\n    Wrap Up\n</h4>\n\nCongratulations! You finished your first lesson.\nYou learned how to use example code for learning,\nsolve a task, show hints and check your solution.\nYou can use this knowledge to solve the other\nlessons.\n\n</html>\n",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "Output",
+      "task_list" : [
+        {
+          "name" : "task1",
+          "files" : {
+            "example.py" : {
+              "name" : "example.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "a = \"This is a \"\nb = \"Text\"\nprint(a)\nprint(\"\")\nprint(b)\nprint(\"\")\nprint(a + b)\n"
+            },
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [
+                {
+                  "offset" : 74,
+                  "length" : 31,
+                  "possible_answer" : "\"\"",
+                  "placeholder_text" : "Placeholder 1: Insert code here"
+                },
+                {
+                  "offset" : 171,
+                  "length" : 31,
+                  "possible_answer" : "print(output + name)",
+                  "placeholder_text" : "Placeholder 2: Insert code here"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "# TODO: type solution here\n\n# Save your name inside this variable.\nname = Placeholder 1: Insert code here\noutput = \"Hello, my name is \"\n\n# Print the output and your name.\nPlaceholder 2: Insert code here\n"
+            },
+            "tests.py" : {
+              "name" : "tests.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\n\ndef test_answer_placeholders():\n    import task as task_file\n    placeholders = get_answer_placeholders()\n    if isinstance(task_file.name, str):\n        passed()\n    else:\n        failed(\"The name must be a string!\")\n    if placeholders[1].replace(\" \", \"\") ==\\\n            \"print(output+name)\":\n        passed()\n    else:\n        failed(\"Use print function here!\")\n\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n"
+            }
+          },
+          "description_text" : "<html>\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/KIT_text.png\" alt=\"KIT Logo\" style=\"max-height:100%;width:55%;height:auto;max-width:300px;\">\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/mrt.png\" alt=\"MRT Logo\" style=\"float:right;max-height:100%;width:37.125%;height:auto;max-width:200px;\">\n\n<h1>Python Tutorial for Beginners</h1>\n<h2>\n    Output\n</h2>\nThis is your first real lesson inside this python\ntutorial. Your\nexercise is to use the\nsimple print function. The print function\nis for printing text to the console. It is\nuseful for debugging and giving information\nto the user. Debugging means finding\nmistakes inside your program code. Like every\nfunction, you have to write parantheses after\nthe function name. Inside the parantheses there\nare the arguments for the function. Regarding the\nprint function the content which you want to\nshow on the console is inside the parentheses.\nInteresting to know is, that print is a so called\nin-built function. There are many of them and you\ncan find them on the internet. These in-built\nfunctions are solving many problems. That means\nthat you don't have to solve every problem by\nyourself because there was another smart guy\nwho already solved it for you. You can also use\nyour own function, but you will learn about it\ninside lesson <i>Functions</i>.\n<br>\n<br>\n<b>Example:</b>\n<p style=\"margin-left: 40px\">\n    a = \"This is a \"<br>\n    b = \"Text\"<br>\n    print(a)<br>\n    print(b)<br>\n    print(a + b)\n</p>\nTry executing <i>example.py</i>. In this example\n<i>a</i> and <i>b</i> are variables. Variables are\nused for saving information, but don't\nworry about details, you will learn\nthem in the next lesson. Here you only need the\nusage of variables, which is shown inside\nthe example.\n<br>\n\n<h4>\n    Exercise\n</h4>\n\nIn this exercise you have to write your\nname into a variable and print it together\nwith another variable on the console.\nWrite your name into\nthe variable <i>name</i>. Print it together\nwith the variable <i>output</i> on the\nconsole.\n\n<details>\n<summary>Hint for Placeholder 1:</summary>\n<p>Use double quotes like \"&lt;name&gt;\"</p>\n</details>\n\n<h4>\n    Wrap Up\n</h4>\n\nIn this lesson you have learned how to print\nvariables on the console. This knowledge is\nuseful for debugging and information exchange\nwith the user.\n</html>\n",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "Variables and Types",
+      "task_list" : [
+        {
+          "name" : "task1",
+          "files" : {
+            "example1.py" : {
+              "name" : "example1.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "myint = 3\nmyfloat = 12.2\n\nprint(\"Here comes an int:\")\nprint(myint)\nprint(\"\")\nprint(\"Here comes a float:\")\nprint(myfloat)\nprint(\"\")\n\nmyint = int(9.8)\nmyfloat = float(4)\n\nprint(\"Here comes an casted int:\")\nprint(myint)\nprint(\"\")\nprint(\"Here comes a casted float:\")\nprint(myfloat)\n"
+            },
+            "example2.py" : {
+              "name" : "example2.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "mystring = 'Alfred says: \"Hello!\"'\nprint(\"Here comes a str with single quotes:\")\nprint(mystring)\nprint(\"\")\nmystring = \"Alfred says: 'Hello!'\"\nprint(\"Here comes a str with double quotes:\")\nprint(mystring)\n"
+            },
+            "example3.py" : {
+              "name" : "example3.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "one = 1\ntwo = 2\nthree = one + two\nprint(three)\n\nprint(\"\")\n\nhello = \"hello\"\nworld = \"world!\"\nhelloworld = hello + \" \" + world\nprint(helloworld)\n\nprint(\"\")\n\n# print(one + hello) does not work\nprint(\"Variable one is: %d \" % one)\nprint(\"Variables are: %d %s\" % (one, hello))\n\nprint(\"\")\n\nmyfloat = 12.234456134\n\nprint(\"%f\" % myfloat)\nprint(\"%.1f\" % myfloat)\nprint(\"%.4f\" % myfloat)\n\nprint(\"\")\n\nprint(str(one) + \" \" + str(myfloat) +\\\n      \" \" + hello)\n"
+            },
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [
+                {
+                  "offset" : 68,
+                  "length" : 31,
+                  "possible_answer" : "1",
+                  "placeholder_text" : "Placeholder 1: Insert code here"
+                },
+                {
+                  "offset" : 149,
+                  "length" : 31,
+                  "possible_answer" : "1.534231232",
+                  "placeholder_text" : "Placeholder 2: Insert code here"
+                },
+                {
+                  "offset" : 216,
+                  "length" : 31,
+                  "possible_answer" : "\"Test String\"",
+                  "placeholder_text" : "Placeholder 3: Insert code here"
+                },
+                {
+                  "offset" : 323,
+                  "length" : 31,
+                  "possible_answer" : "str(int_a) + \" \" + str(float_b) + \" \" + string_c",
+                  "placeholder_text" : "Placeholder 4: Insert code here"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "# TODO: type solution here\n\n# Write an integer number here.\nint_a = Placeholder 1: Insert code here\n\n# Write a floating-point number here.\nfloat_b = Placeholder 2: Insert code here\n\n# Write a string here.\nstring_c = Placeholder 3: Insert code here\n\n# Concat int_a, float_b and string_s\n# seperated by blanks.\ncombination = Placeholder 4: Insert code here\n\nprint(combination)\n"
+            },
+            "tests.py" : {
+              "name" : "tests.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nimport task as task_file\n\ndef test_answer_placeholders():\n    placeholders = get_answer_placeholders()\n    a = task_file.int_a\n    b = task_file.float_b\n    s = task_file.string_c\n    c = task_file.combination\n    if isinstance(a, int):\n        passed()\n    else:\n        failed(\"int_a is no integer!\")\n    if isinstance(b, float):\n        passed()\n    else:\n        failed(\"float_b is no float!\")\n    if isinstance(s, str):\n        passed()\n    else:\n        failed(\"string_s is no string!\")\n    if c == str(a) + \" \" + str(b) + \" \" + s:\n        passed()\n    else:\n        failed(\"combination is wrong\")\n\n\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+            }
+          },
+          "description_text" : "<html>\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/KIT_text.png\" alt=\"KIT Logo\" style=\"max-height:100%;width:55%;height:auto;max-width:300px;\">\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/mrt.png\" alt=\"MRT Logo\" style=\"float:right;max-height:100%;width:37.125%;height:auto;max-width:200px;\">\n\n<h1>Python Tutorial for Beginners</h1>\n<h2>\n    Variables and Types\n</h2>\nIn this lesson you learn the basics about\nvariables and types. You will get to know types for\ninteger numbers, floating-point numbers and\ntexts. You will learn how to save these types\nin variables and use them for printing.\n<br>\nA variable can save different information, like\nnumbers and text. In Python a variable can\nchange its type during runtime. Simple types\nare <i>int, float, str</i> and <i>bool</i>. In\nthis lesson we will concentrate on the first\nthree types. Bools will be discussed in\nlesson <i>Conditions</i>.\n<br>\n<br>\n<b>Example:</b>\n<br>\n<p style=\"margin-left: 40px\">\n    myint = 3<br>\n    # is a integer number (int)<br>\n    myfloat = 12.2<br>\n    # is a floating-point number (float)<br>\n    mystring = \"hello\"<br>\n    # is a text (str)\n</p>\n<b>Note: floating-point numbers are seperated\nwith a dot, not a comma.</b><br />\nThere are differences in printing integer and\nfloating-point numbers, which will be shown\nwith the next example. You can also change\nthe type of a number during runtime.\n<br>\n<br>\n<b>Example:</b>\n<br>\n<p style=\"margin-left: 40px\">\n    myint = 3<br>\n    myfloat = 12.2<br><br>\n    myint = int(myfloat)<br>\n    # Now myint = 12<br>\n    myint = int(9.87)<br>\n    # Now myint = 9<br><br>\n    myfloat = float(myint)<br>\n    # Now myfloat = 9.0\n</p>\nTry executing <i>example1.py</i> to see\nhow it works.\n<b>Note: When changing from a float to\nan int, the floating-point numbers will\nbe ignored. That means the number will\nalways be rounded down.</b><br />\nFor strings, which are basically texts,\nyou can use single or double\nquotes. Inside single quotes it is easy to\nrepresent double quotes inside a text and\ninside double quotes it is vice versa. Try\nexecuting <i>example2.py</i>.\n<br>\n<br>\nIt is also possible to add two numbers or\nconcatenate two strings. For both operations you\ncan use the \"+\"-operator. But you can not use\nthis operator for numbers and texts together.\nFor this use case, there are different\nsolutions.\n<br>\n<br>\n<b>Example:</b>\n<br>\n<p style=\"margin-left: 40px\">\n    one = 1<br>\n    hello = \"hello\"<br>\n    print(\"Variable one is: %d\" % one)<br>\n    # %d is used for printing an integer number<br>\n    # The % after \" is to declare which<br>\n    # variable is used.<br>\n    print(\"Variables are: %d %s\" % (one, hello))<br>\n    # %s is used for printing a string<br>\n    # You can also use more than one<br>\n    # variable by using parentheses<br><br>\n    myfloat = 12.234456134<br>print(\"%f\" % myfloat)<br>\n    # %f is used for printing floating<br>\n    # point numbers<br>\n    # The number of decimal places is<br>\n    # fixed<br>print(\"%.4f\" % myfloat)<br>\n    # By using %.xf you can set the number<br>\n    # of decimal places<br><br>\n    print(str(myfloat) + \" \" + hello)<br>\n    # You can also cast a number to string<br>\n    # and concatenate them.<br>\n    # In this case you get all decimal<br>\n    # places, at least 1 if the number is<br>\n    # a integer number saved as float\n</p>\nTry executing <i>example3.py</i>.<br>\n<b>Note: The number of %-symbols and their types\ninside the double quotes have to match exactly\nthe number of variables inside the parentheses.\nThe variables inside the parentheses will be used\nin a chronological order.</b>\n\n<h4>\n    Exercise\n</h4>\n\nIn this exercise you have to save different\nvariable types and concatenate them in only one\nvariable. Save an integer number inside\n<i>int_a</i>, a floating point number inside\n<i>float_b</i> and a string inside <i>string_c</i>. Then\nconcatenate them separated with a blank inside\nthe variable <i>combination</i>. For the floating\npoint number use all decimal numbers, not\nmore and not less.\n\n<details>\n<summary>Hint for Placeholder 4:</summary>\n<p>\"&lt;int_a&gt; &lt;float_b&gt; &lt;string_c&gt;\"</p>\n</details>\n<details>\n<summary>Hint for Placeholder 4:</summary>\n<p>Use a cast or string output with variables.</p>\n</details>\n\n<h4>\n    Wrap Up\n</h4>\n\nIn this lesson you have got to know the\nmost important variable types and how to\nuse them. You can now save them into\nvariables and cast them to other types.\nYou also learned different ways to print\nnumbers together with text on the console.\n\n</html>\n",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "Lists",
+      "task_list" : [
+        {
+          "name" : "task1",
+          "files" : {
+            "example1.py" : {
+              "name" : "example1.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "list = [1, 2, 3]\nprint(list)\n\nprint(\"\")\n\nlist = [2.2, 3.5, 4.6]\nprint(list)\n\nprint(\"\")\n\nlist = [\"A\", \"B\", \"C\"]\nprint(list)\n"
+            },
+            "example2.py" : {
+              "name" : "example2.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "list = [1, 2, 3]\nprint(list)\n\nprint(\"\")\n\nlist.append(4)\nlist.append(5)\nprint(list)\n\nprint(\"\")\n\nprint(list[0])\nprint(list[1])\nprint(list[2])\nprint(list[3])\nprint(list[4])\n\nprint(\"\")\n\nlist[0] = 321\nprint(list)\n"
+            },
+            "example3.py" : {
+              "name" : "example3.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "list = []\nlist.append((1, \"Hello\", \"x\"))\n# Appended by a Triple\nlist.append(2)\nlist.append(\"World\")\nlist.append([\"!\", 3])\n# Appended by another list\n\nprint(list)\nprint(list[0])\nprint(list[0][0])\nprint(list[0][1])\nprint(list[0][2])\nprint(list[1])\nprint(list[2])\nprint(list[3])\nprint(list[3][0])\nprint(list[3][1])\n\nprint(\"\")\n\n# list[0].append(\"y\") does not work,\n# because it is not a list. It is a triple\n# and you can not append a triple or tuple.\n# Next thing works\nprint(list[3])\n\nprint(\"\")\n\nlist[3].append(\"?\")\nprint(list[3])\n"
+            },
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [
+                {
+                  "offset" : 85,
+                  "length" : 31,
+                  "possible_answer" : "[1, 2, 3, 4, 5]",
+                  "placeholder_text" : "Placeholder 1: Insert code here"
+                },
+                {
+                  "offset" : 283,
+                  "length" : 31,
+                  "possible_answer" : "list_2.append(6)\nlist_2.append(7)",
+                  "placeholder_text" : "Placeholder 2: Insert code here"
+                },
+                {
+                  "offset" : 372,
+                  "length" : 31,
+                  "possible_answer" : "list_2[2]",
+                  "placeholder_text" : "Placeholder 3: Insert code here"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "# TODO: type solution here\n\n# Save a list with 5 different integer numbers.\nlist_1 = Placeholder 1: Insert code here\n\nlist_2 = []\nfor i in range(0, len(list_1)):\n    list_2.append(list_1[i])\n\n# now list_2 is the same as list_1\n\n# Extend list_2 by two more different integer numbers.\nPlaceholder 2: Insert code here\n\n# Save the third value of list_2 insides int_a.\nint_a = Placeholder 3: Insert code here\n"
+            },
+            "tests.py" : {
+              "name" : "tests.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nimport task as task_file\n\ndef test_answer_placeholders():\n    placeholders = get_answer_placeholders()\n    list_1 = task_file.list_1\n    list_2 = task_file.list_2\n    if \"[\" in placeholders[0] and\\\n            \"]\" in placeholders[0]:\n        passed()\n    else:\n        failed(\"Use square brackets to save a list!\")\n    for i in range(len(list_1)):\n        if isinstance(list_1[i], int):\n            passed()\n        else:\n            failed(\"Not all values inside list_1 \" +\n                   \"are integer numbers!\")\n        for j in range(i + 1, len(list_1)):\n            if list_1[i] != list_1[j]:\n                passed()\n            else:\n                failed(\"The values in list_1 \" +\n                       \"are not different!\")\n    if len(list_1) == 5:\n        passed()\n    else:\n        failed(\"There have to be exact 5 values \" +\n               \"inside list_1!\")\n    if \"list_2.append\" in placeholders[1]:\n        passed()\n    else:\n        failed(\"Use append for extending the list!\")\n    for i in range(len(list_2)):\n        if isinstance(list_2[i], int):\n            passed()\n        else:\n            failed(\"Not all values inside list_2 \" +\n                   \"are integer numbers!\")\n        for j in range(i + 1, len(list_2)):\n            if list_2[i] != list_2[j]:\n                passed()\n            else:\n                failed(\"The values in list_2 \" +\n                       \"are not different!\")\n    if len(list_2) == 7:\n        passed()\n    else:\n        failed(\"list_2 should be extended by two \" +\n        \"more values!\")\n    if placeholders[2].replace(\" \", \"\") == \"list_2[2]\":\n        passed()\n    else:\n        failed(\"You have to access the third value \" +\n               \"of list_2!\")\n\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+            }
+          },
+          "description_text" : "<html>\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/KIT_text.png\" alt=\"KIT Logo\" style=\"max-height:100%;width:55%;height:auto;max-width:300px;\">\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/mrt.png\" alt=\"MRT Logo\" style=\"float:right;max-height:100%;width:37.125%;height:auto;max-width:200px;\">\n\n<h1>Python Tutorial for Beginners</h1>\n<h2>\n    Lists\n</h2>\n\nThis lesson is all about lists. Lists are for\nsaving different values inside only one\nvariable and access a specific position of\nthe list easily.\nYou will learn how to save the values in a\nlist, change them to other values, access\nthem directly and print them on the console.\n<br>\nFor dircetly saving values inside a list you\ncan write the values inside square brackets\nseperated by commas.\n<br>\n<br>\n<b>Example:</b>\n<br>\n<p style=\"margin-left: 40px\">list = [1, 2, 3]<br>list = [2.2, 3.5, 4.6]<br>list = [\"A\", \"B\", \"C\"]</p>\nFor this example you can use <i>\nexample1.py</i>. You can also extend your\nlist or access a value on a specific place\nin your list.\n<br>\n<br>\n<b>Example:</b>\n<br>\n<p style=\"margin-left: 40px\">list = [1, 2, 3]<br><br>list.append(4)<br># This is for extending a list<br>print(list[0])<br># The number inside the square<br># brackets quote the place of the<br># value inside the variable<br># NOTICE: The places begin at place 0<br><br>list[0] = 321<br># You can use the square brackets to<br># directly change the value on a<br># specific place inside the list</p>\nIn <i>example2.py</i> you can see how this\nworks. It is also possible to save different\ntypes inside one list and also tuple, triple\nand so on. You can also save another list in\none list place. <i>example3.py</i> shows the\npossibilities. But just because this is\npossible, it does not mean you should use\nthis. It is recommended to save the same\ntypes insides one list. This means for\nexample only save integer numbers or tuple\nwith the same structure inside a list.\n\n<h4>\n    Exercise\n</h4>\n\nReplace the first placeholder with a list\nwith 5 different integer numbers. Then\nextend the second list by two more different\ninteger numbers. Finally save the third\nvalue of <i>list_2</i> inside the variable\n<i>int_a</i>.\n\n<details>\n<summary>Hint for Placeholder 1:</summary>\n<p>Use square brackets for saving lists.</p>\n</details>\n<details>\n<summary>Hint for Placeholder 1:</summary>\n<p>Seperate the values inside the square brackets by commas.</p>\n</details>\n<details>\n<summary>Hint for Placeholder 2:</summary>\n<p>For extending a list use append.</p>\n</details>\n<details>\n<summary>Hint for Placeholder 2:</summary>\n<p>list_2.append(x)</p>\n</details>\n<details>\n<summary>Hint for Placeholder 3:</summary>\n<p>For getting a value of list_2 use square brackets.</p>\n</details>\n<details>\n<summary>Hint for Placeholder 3:</summary>\n<p>list_2[x]</p>\n</details>\n<details>\n<summary>Hint for Placeholder 3:</summary>\n<p>To get the first value use list_2[0].\n    <br />\n    Counting inside a list starts at place 0.</p>\n</details>\n\n<h4>\n    Wrap Up\n</h4>\n\nThis lesson was about lists. You learned\nhow to save a list, extend it and access\na specific place of the list to change\nor read the value. All of this is useful\nto handle many values or objects inside\none variable. You will learn about objects\nlater.\n\n</html>\n",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "Basic Operators",
+      "task_list" : [
+        {
+          "name" : "task1",
+          "files" : {
+            "example1.py" : {
+              "name" : "example1.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "number = 1 + 2 * 3 / 4\nprint(number)\n\nnumber = (1 + 2) * 3 / 4\nprint(number)\n\nnumber = 1 + 2 * 3 // 4\nprint(number)\n\nprint(\"\")\n\nremainder = 63 % 8\nprint(remainder)\n\nprint(\"\")\n\nsquared = 7 ** 2\ncubed = 2 ** 3\nprint(squared)\nprint(cubed)\n"
+            },
+            "example2.py" : {
+              "name" : "example2.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "helloworld = \"hello\" + \" \" + \"world\"\nprint(helloworld)\n# + with strings will concat them.\n\nlotsofhellos = \"hello \" * 10\nprint(lotsofhellos)\n# * with strings will concat them\n# with the same string times the\n# defined number.\n\nprint(\"\")\n\neven_numbers = [2, 4 ,6 ,8]\nodd_numbers = [1, 3, 5, 7]\nall_numbers = odd_numbers + even_numbers\nprint(all_numbers)\n# + with list will concat them to one\n# list.\n\nprint(\"\")\n\nprint([1, 21, 34] * 3)\n# * with list will concat them to one\n# one list times the defined number.\n"
+            },
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [
+                {
+                  "offset" : 133,
+                  "length" : 31,
+                  "possible_answer" : "(3 * 4 + 2 ** 6) * 3 - 21",
+                  "placeholder_text" : "Placeholder 1: Insert code here"
+                },
+                {
+                  "offset" : 247,
+                  "length" : 31,
+                  "possible_answer" : "\"H\" + 5 * \"e\" + 2 * \"l\" + \"o\"",
+                  "placeholder_text" : "Placeholder 2: Insert code here"
+                },
+                {
+                  "offset" : 339,
+                  "length" : 31,
+                  "possible_answer" : "[\"fun\"] * 3",
+                  "placeholder_text" : "Placeholder 3: Insert code here"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "# TODO: type solution here\n\n# Calculate (3 times 4 plus 2 to the power of 6) times 3 minus 21.\n# Please note the parentheses!\ncalc = Placeholder 1: Insert code here\n\n# Write \"Heeeeello\" with the \"addition\" and\n# \"multiplication\" operator.\nhello = Placeholder 2: Insert code here\n\n# Save a list with 3 times \"fun\" using an operator.\nlist = Placeholder 3: Insert code here\n"
+            },
+            "tests.py" : {
+              "name" : "tests.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nimport task as task_file\n\ndef test_answer_placeholders():\n    placeholders = get_answer_placeholders()\n    if placeholders[0].replace(\" \", \"\") == \\\n            \"(3*4+2**6)*3-21\":\n        passed()\n    else:\n        failed(\"Your calculation is wrong!\")\n    if ('5*\"e\"' in placeholders[1].replace(\" \", \"\") or \\\n            \"5*'e'\" in placeholders[1].replace(\" \", \"\") or \\\n            '\"e\"*5' in placeholders[1].replace(\" \", \"\") or \\\n            \"'e'*5\" in placeholders[1].replace(\" \", \"\")) and\\\n            '2*\"l\"' in placeholders[1].replace(\" \", \"\") or \\\n            \"2*'l'\" in placeholders[1].replace(\" \", \"\") or \\\n            '\"l\"*2' in placeholders[1].replace(\" \", \"\") or \\\n            \"'l'*2\" in placeholders[1].replace(\" \", \"\") and\\\n            task_file.hello == \"Heeeeello\":\n        passed()\n    else:\n        failed('Your \"Heeeeello\" is wrong')\n    if task_file.list == [\"fun\"] * 3:\n        passed()\n    else:\n        failed(\"Your list is wrong!\")\n\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n"
+            }
+          },
+          "description_text" : "<html>\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/KIT_text.png\" alt=\"KIT Logo\" style=\"max-height:100%;width:55%;height:auto;max-width:300px;\">\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/mrt.png\" alt=\"MRT Logo\" style=\"float:right;max-height:100%;width:37.125%;height:auto;max-width:200px;\">\n\n<h1>Python Tutorial for Beginners</h1>\n<h2>\n    Basic Operators\n</h2>\n\nIn this lesson you will get to know the basic\noperators for numbers, strings and lists. The\nbasic operators for numbers are arithmetic\noperators. You can also use some of these\noperators for strings and lists but then they\nhave another impact.\n<br>\nHereafter you will first get to know the\narithmetic operators for numbers and after\nthat the impact on strings and list.\n<br>\nThe arithmetic operators are addition (+),\nsubtraction (-), multiplication (*), division\n(/), integer division (//), modulor or remainder (%) and\npower (**). You can use them like in a\ncalculator. You can also use parentheses like\nyou would do it with your calculator (see <i>\nexample1.py</i>).\n<br>\nFor strings and lists you can also use the\n\"addition\" (+) and \"multiplication\" (*)\noperator, but the impact is different. Try\nexecuting <i>example2.py</i>.\n\n<h4>\n    Exercise\n</h4>\n\nIn this exercise you have to do a\ncalculation, write a word with many vowels\nand a list with repeating content. The\ncalculation is (3 times 4 plus 2 to the\npower of 6) times 3 minus 21. Please note\nthe parentheses to have the right order for\nthe calculation. The result of the word\nwith many vowels should be \"Heeeeello\",\nbut you have to use operators to reach\nthis result. Use as less alphabetic characters\nas possible. At last you should save a\nlist with 3 times the word \"hello\".\nTherefor you have to use an operator.\n\n<details>\n<summary>Hint for Placeholder 2:</summary>\n<p>\"H\" ... 5 ... \"e\" ... 2 ... \"l\" ... \"o\"</p>\n</details>\n\n<h4>\n    Wrap Up\n</h4>\n\nIn this lesson you learned how to do\ncalculations and their operators. You\nalso get to know these operators for\nstrings and list and their different\nimpact. Now you can extend lists with\nother lists and also strings with other\nstrings. You also can multiply lists\nand strings.\n\n</html>\n",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "Conditions",
+      "task_list" : [
+        {
+          "name" : "task1",
+          "files" : {
+            "example1.py" : {
+              "name" : "example1.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "x = 2\n\nprint(\"x == 2 is \" + str(x == 2))\nprint(\"x == 3 is \" + str(x == 3))\nprint(\"x < 3 is \" + str(x < 3))\nprint(\"x <= 2 is \" + str(x <= 2))\nprint(\"x >= 2 is \" + str(x >= 2))\nprint(\"x > 3 is \" + str(x > 3))\nprint(\"x != 2 is \" + str(x != 2))\n"
+            },
+            "example2.py" : {
+              "name" : "example2.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "name = \"Alfred\"\nage = 23\n\nif name == \"Alfred\":\n    print(\"Your name is Alfred.\")\n\nif age == 23:\n    print(\"You are 23 years old.\")\n    print(\"Another execution in the same if block!\")\n\nif age == 24:\n    print(\"You are 24 years old.\")\n    # This will not be executed.\n\nif name == \"Alfred\" and age == 23:\n    print(\"Your name is Alfred, and you are also 23 years old.\")\n\nif name == \"Alfred\" and age == 24:\n    print(\"Your name is Alfred, and you are also 24 years old.\")\n    # This will not be executed.\n\nif name == \"Alfred\" or name == \"Ben\":\n    print(\"Your name is either Alfred or Ben.\")\n\nif name == \"Ben\" or name == \"Caesar\":\n    print(\"Your name is either Ben or Caesar.\")\n    # This will not be executed.\n\nif 0:\n    print(\"Nothing to do!\")\n    # This will not be executed.\n\nif 5:\n    print(\"Number condition is true!\")\n\nif []:\n    print(\"Nothing to do!\")\n    # This will not be executed.\n\nif [1, 2, 3]:\n    print(\"List condition is true!\")\n"
+            },
+            "example3.py" : {
+              "name" : "example3.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "name = \"Alfred\"\nif name in [\"Alfred\", \"Ben\"]:\n    print(\"Your name is either Alfred or Ben.\")\n\n\nhelloWorld = \"Hello World!\"\nif \"hello\" in helloWorld:\n    print(\"String is inside!\")\n    # This will not be executed\n    # Lower and upper case is respected\n\nif \"Hello\" in helloWorld:\n    print(\"String is inside!\")\n"
+            },
+            "example4.py" : {
+              "name" : "example4.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "x = 2\n\nif x == 5:\n    print(\"x is 5.\")\nelif x == 3:\n    print(\"x is 3.\")\nelif x == 4:\n    print(\"x is 4.\")\nelse:\n    print(\"x is neither 3 nor 4 nor 5.\")\n"
+            },
+            "example5.py" : {
+              "name" : "example5.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "print(not False)\nprint((not False) == (False))\n"
+            },
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [
+                {
+                  "offset" : 86,
+                  "length" : 31,
+                  "possible_answer" : "16",
+                  "placeholder_text" : "Placeholder 1: Insert code here"
+                },
+                {
+                  "offset" : 176,
+                  "length" : 31,
+                  "possible_answer" : "0",
+                  "placeholder_text" : "Placeholder 2: Insert code here"
+                },
+                {
+                  "offset" : 268,
+                  "length" : 31,
+                  "possible_answer" : "1, 2, 3",
+                  "placeholder_text" : "Placeholder 3: Insert code here"
+                },
+                {
+                  "offset" : 361,
+                  "length" : 31,
+                  "possible_answer" : "1, 2",
+                  "placeholder_text" : "Placeholder 4: Insert code here"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "# TODO: type solution here\n\n# Change the value, that all conditions are true.\nint_a = Placeholder 1: Insert code here\n# Change the value, that all conditions are true.\nint_b = Placeholder 2: Insert code here\n# Change the value, that all conditions are true.\nlist_1 = [Placeholder 3: Insert code here]\n# Change the value, that all conditions are true.\nlist_2 = [Placeholder 4: Insert code here]\n\nif int_a > 15:\n    print(\"1\")\n\nif list_1:\n    print(\"2\")\n\nif len(list_2) == 2:\n    print(\"3\")\n\nif len(list_1) + len(list_2) == 5:\n    print(\"4\")\n\nif list_1 and list_1[0] == 1:\n    print(\"5\")\n\nif not int_b:\n    print(\"6\")\n"
+            },
+            "tests.py" : {
+              "name" : "tests.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nimport task as task_file\n\n\ndef test_answer_placeholders():\n    int_a = task_file.int_a\n    int_b = task_file.int_b\n    list_1 = task_file.list_1\n    list_2 = task_file.list_2\n    if int_a > 15:\n        passed()\n    else:\n        failed(\"int_a is less or equal to 15!\")\n    if list_1:\n        passed()\n    else:\n        failed(\"List condition for list_1 is false!\")\n    if len(list_2) == 2:\n        passed()\n    else:\n        failed(\"Length of list_2 is not equal to 2.\")\n    if len(list_1) + len(list_2) == 5:\n        passed()\n    else:\n        failed(\"Length of list_1 plus list_2 is not\" +\n               \"equal to 5.\")\n    if list_1 and list_1[0] == 1:\n        passed()\n    else:\n        failed(\"List condition for list_1 is false \" +\n               \"or first element of list_1 is not \" +\n               \"equal to 1!\")\n    if not int_b:\n        passed()\n    else:\n        failed(\"Number condition for int_b is true! \" +\n               \"Note the not operator!\")\n\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+            }
+          },
+          "description_text" : "<html>\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/KIT_text.png\" alt=\"KIT Logo\" style=\"max-height:100%;width:55%;height:auto;max-width:300px;\">\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/mrt.png\" alt=\"MRT Logo\" style=\"float:right;max-height:100%;width:37.125%;height:auto;max-width:200px;\">\n\n<h1>Python Tutorial for Beginners</h1>\n<h2>\n    Conditions\n</h2>\n\nThis lesson is about conditions. Conditions are\nfor controlling the program flow. There are\ndifferent ways to check a condition. You will\nget to know all of them.\n<br>\nFirst there are comparisons between two values.\nThe result of the comparison is always of type\nbool. This means the result is always <i>True</i>\nor <i>False</i>.\nYou can compare numbers and strings. To\ncheck if two values are the same, you are using \"==\".\nThe difference between the single and double\nequal sign is that the single equal sign is for\nassigning a value to a variable. The double\nequal sign is for comparison.\n<br>\nYou can also check less than \"<\" (or less equal\n\">=\"), greater than \">\" (or greater equal \">=\") and not\nthe same \"!=\". These comparisons are also\npossible for strings, but only \"!=\" is\nsuggestive for standard use cases with strings.\nExecute <i>example1.py</i> for use case\nexamples.\n<br>\nAfter you learned about comparison, you will\nlearn about their usage for conditions. For\nconditions you use <i>if &lt;condition&gt;:</i>.\nIf the condition is <i>True</i> everything\nwith an indentation will be executed. <b>It is\nimportant that the same indentation is used,\nbut it doesn't matter if you use tabs or\nblanks</b>. You can also combine conditions,\nor with other words two bool values, with\n\"and\" or \"or\". Following you can find the\ntruth tables, it shows the results from\ncombining two bool values:\n<br>\n<br>\n<table>\n    <tr>\n        <th>and</th>\n        <th>True</th>\n        <th>False</th>\n    </tr>\n    <tr>\n        <th>True</th>\n        <td>True</td>\n        <td>False</td>\n    </tr>\n    <tr>\n        <th>False</th>\n        <td>False</td>\n        <td>False</td>\n    </tr>\n</table>\n\n<br>\n<table>\n    <tr>\n        <th>or</th>\n        <th>True</th>\n        <th>False</th>\n    </tr>\n    <tr>\n        <th>True</th>\n        <td>True</td>\n        <td>True</td>\n    </tr>\n    <tr>\n        <th>False</th>\n        <td>True</td>\n        <td>False</td>\n    </tr>\n</table>\n\n<br>\n<b>Note: It is possible to combine more than\n    two conditions.</b>\n\n<br>\n<br>\nAdditionally you can use numbers as a\ncondition. In this case a zero means <i>False</i>\nand every other number is <i>True</i>. You can also\nuse lists, an empty list is <i>False</i> and a list\nwith content is <i>True</i>.\n<i>example2.py</i> shows some examples. Next\nyou will learn about the in operator. It is\nused for checking if a value is inside a\nlist or a string is inside another string.\n<b>Note, lower and upper case is respected</b>\n(see <i>example3.py</i>). If you want\nto check for different cases in one block, you\nwill use <i>elif</i>. You can use several\n<i>elif</i> for more than two conditions.\nFor a default execution you can use <i>else\n</i> (see <i>example4.py</i>). The execution\norder is top to down. The first true result\nwill be executed. The last thing to learn is\nthe not operator. The not operator will\nnegate a condition. <i>True</i> will become <i>False</i>\nand <i>False</i> will become <i>True</i> (see <i>\nexample5.py</i>).\n\n<h4>\n    Exercise\n</h4>\n\nIn this exercise you have different\nvariables and conditions. Change all values\nof the variables, that the conditions\nbecome true. <b>Note: <i>len(list_1)</i> gives\nyou the number of values inside\n<i>list_1</i>.</b>\n\n<h4>\n    Wrap Up\n</h4>\n\nIn this lessons you learned about conditions.\nYou can control the program flow with them.\nYou can also concat different boolean values\nwith \"and\" and \"or\". You know how to use more\nthan one condition and additionally a default\ncondition and you also get to know the in and\nnot operator.\n\n</html>\n",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "Loops",
+      "task_list" : [
+        {
+          "name" : "task1",
+          "files" : {
+            "example1.py" : {
+              "name" : "example1.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "list_1 = [81, 95, 3, 1]\ncount = 1\nfor x in list_1:\n    print(\"This is the \" + str(count) +\n          \". iteration:\")\n    print(\"In this iteration x is \" +str(x))\n    count += 1\n    # \"count += 1\" means \"count = count + 1\"\n    # same with -= *= /= %= //=\n"
+            },
+            "example2.py" : {
+              "name" : "example2.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "for i in range(3):\n    print(i)\n\nprint(\"\")\n\nfor i in range(21, 26):\n    print(i)\n\nprint(\"\")\n\nfor i in range(6, 21, 5):\n    print(i)\n\nprint(\"\")\n\nlist_1 = [1, 2, 3, 4]\nlist_2 = [5, 6, 7, 8]\nlist_3 = []\n\nfor i in range(len(list_1)):\n    x = list_1[i] + list_2[i]\n    list_3.append(x)\n    print(list_3[i])\n"
+            },
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [
+                {
+                  "offset" : 139,
+                  "length" : 31,
+                  "possible_answer" : "for x in list_1:\n    print(x)",
+                  "placeholder_text" : "Placeholder 1: Insert code here"
+                },
+                {
+                  "offset" : 256,
+                  "length" : 31,
+                  "possible_answer" : "for i in range(len(list_1)):\n    print(list_1[i])",
+                  "placeholder_text" : "Placeholder 2: Insert code here"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "# TODO: type solution here\n\nlist_1 = [1, 3, 10, 12, 15]\n\n# Print all values inside list_1 using a\n# for loop without using range function.\nPlaceholder 1: Insert code here\n\nprint(\"\")\n\n# Print all values inside list_1 using a\n# for loop with range function.\nPlaceholder 2: Insert code here\n"
+            },
+            "tests.py" : {
+              "name" : "tests.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\n\ndef test_answer_placeholders():\n    placeholders = get_answer_placeholders()\n\n    if \"for\" in placeholders[0] and \\\n            \"list_1\" in placeholders[0] and \\\n            \"print\" in placeholders[0] and \\\n            not \"range\" in placeholders[0]:\n        passed()\n    else:\n        failed(\"For without range is wrong!\")\n\n    if \"for\" in placeholders[1] and \\\n            \"list_1\" in placeholders[1] and \\\n            \"print\" in placeholders[1] and \\\n            \"range\" in placeholders[1]:\n        passed()\n    else:\n        failed(\"For with range is wrong!\")\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+            }
+          },
+          "description_text" : "<html>\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/KIT_text.png\" alt=\"KIT Logo\" style=\"max-height:100%;width:55%;height:auto;max-width:300px;\">\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/mrt.png\" alt=\"MRT Logo\" style=\"float:right;max-height:100%;width:37.125%;height:auto;max-width:200px;\">\n\n<h1>Python Tutorial for Beginners</h1>\n<h2>\n    Loops\n</h2>\n\nThe next lesson is about loops. Like conditions\nthey are used for controlling the program flow.\nThere are two different loops, the for and the\nwhile loop. You will get to know both of them\nand additional commands to work with them. Like\nwith conditions you have to use indentations to\nsay what the loop have to execute. The first\nloop you will learn about is the for loop. In a\nfor loop you always use a variable, which change\nthe value in each iteration. It is called\ncontinuous variable. The syntax is <i>for x in\nlist:</i>, while <i>x</i> is the continuous variable\nand <i>list</i> is any kind of list. In each iteration\n<i>x</i> becomes the next value of the list, that's why\nit's called continuous variable. <i>example1.py\n</i> shows how it works.\n<br>\nIn the most cases the for loop is used for\niterate over a list. If you have only one list,\nyou can do it like explained above, but for\nmore lists you have to iterate over the positions\nof the lists. For this there is a function to\ngenerate a list with specific numbers. The range\nfunction can be used with 1, 2 or 3 arguments\ninside the parentheses. With one argument the\nsyntax is <i>range(x)</i> and you get a list\nfrom 0 to x-1. With two arguments the syntax\nis <i>range(x, y)</i> and you get a list from x\nto y-1. With three arguments the syntax is <i>\nrange(x, y, z)</i> and you get a list like\n[x, x+z, x+2*z, ...] with maximum number y-1.\nIn all these cases the continuous variable is\nusually named <i>i</i>.\nInside <i>example2.py</i> you can find examples\nwith the range function and a simple use case\nwith three lists.\n\n<h4>\n    Exercise\n</h4>\n\nIn this exercise you have to print a list with\na for loop in two different ways. The\nfirst for loop have to be written without the\nrange function and have to print all values of\n<i>list_1</i>, while the second for loop have to\nbe written with the range function and also have\nto print all values of <i>list_1</i>.\n\n</html>\n",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "task2",
+          "files" : {
+            "example3.py" : {
+              "name" : "example3.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "count = 0\nwhile count < 5:\n    print(count)\n    count += 1\n\nprint(\"\")\n\nlist_1 = [3, 10, 63, 2, 5, 11, 84]\ni = 0\nto_search = 5\n\nwhile list_1[i] != to_search:\n    print(list_1[i])\n    i += 1\n\nprint(\"\")\nprint(\"Position of value is:\")\nprint(i)\nprint(\"The value is:\")\nprint(list_1[i])\n"
+            },
+            "example4.py" : {
+              "name" : "example4.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "count = 0\nwhile True:\n    print(count)\n    count += 1\n    if count >= 5:\n        break\n\nprint(\"\")\n\nprint(\"Print even numbers until 8:\")\nfor i in range(10):\n    # Check if x is even\n    if i % 2 == 1:\n        continue\n    print(i)\n\nprint(\"\")\n\nlist_1 = [3, 10, 63, 2, 5, 11, 84]\ni = 0\nto_search = 31\n\nprint(\"Search for %d:\" % to_search)\nwhile list_1[i] != to_search:\n    i += 1\n    if i == len(list_1):\n        print(\"Value not found!\")\n        break\n"
+            },
+            "example5.py" : {
+              "name" : "example5.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "count = 0\nwhile count < 5:\n    print(count)\n    count +=1\nelse:\n    print(\"count value reached %d\" %(count))\n\nprint(\"\")\n\nfor i in range(1, 10):\n    if i % 5 == 0:\n        break\n    print(i)\nelse:\n    print(\"This is not printed!\")\n"
+            },
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [
+                {
+                  "offset" : 646,
+                  "length" : 31,
+                  "possible_answer" : "i = 0\nwhile list_2[i] != 418:\n    i += 1",
+                  "placeholder_text" : "Placeholder 1: Insert code here"
+                },
+                {
+                  "offset" : 744,
+                  "length" : 31,
+                  "possible_answer" : "i",
+                  "placeholder_text" : "Placeholder 2: Insert code here"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "# TODO: type solution here\n\nlist_2 = [\n    951, 402, 984, 651, 360, 69, 408, 319, 601,\n    485, 980, 507, 725, 547, 544, 615, 83, 165,\n    141, 501, 263, 617, 865, 575, 219, 390, 984,\n    592, 236, 105, 942, 941, 386, 462, 47, 418,\n    907, 344, 236, 375, 823, 566, 597, 978, 328,\n    615, 953, 345, 399, 162, 758, 219, 918, 237,\n    412, 566, 826, 248, 866, 950, 626, 949, 687,\n    217, 815, 67, 104, 58, 512, 24, 892, 894,\n    767, 553, 81, 379, 843, 831, 445, 742, 717,\n    958, 609, 842, 451, 688, 753, 854, 685, 93,\n    857, 440, 380, 126, 721, 328, 753, 470, 743,\n    527\n]\n\n# Find the position of value 418 in list_2\n# using a while loop.\nPlaceholder 1: Insert code here\n\n# Write the found position inside variable\n# position\nposition = Placeholder 2: Insert code here\n"
+            },
+            "tests.py" : {
+              "name" : "tests.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nimport task as task_file\n\ndef test_answer_placeholders():\n    placeholders = get_answer_placeholders()\n    pos = task_file.position\n\n    if \"while\" in placeholders[0]:\n        passed()\n    else:\n        failed(\"Use while to find the position \" +\n               \"of value 418!\")\n\n    if pos == 35:\n        passed()\n    else:\n        failed(\"Position of value 418 is wrong!\")\n\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n"
+            }
+          },
+          "description_text" : "<html>\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/KIT_text.png\" alt=\"KIT Logo\" style=\"max-height:100%;width:55%;height:auto;max-width:300px;\">\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/mrt.png\" alt=\"MRT Logo\" style=\"float:right;max-height:100%;width:37.125%;height:auto;max-width:200px;\">\n\n<h1>Python Tutorial for Beginners</h1>\n<h2>\n    Loops\n</h2>\n\nThe next loop is the while loop. The syntax is\n<i>while &lt;condition&gt;:</i>. Everything\ninside the loop will be executed while the\ncondition is <i>True</i>. That means, that\nthe condition will be checked and if it is\n<i>True</i> the loop will be executed one\ntime. After that the condition will be\nchecked a second time. If it is <i>True</i>\nthe loop will be executed a second time. This\nwill be repeated until the condition is\n<i>False</i>. Then the loop won't be executed\nand the programm is executing everything after\nthe loop.\nThe while loop can be\nused for finding a value inside a list (see <i>\nexample3.py</i>). But be careful, if the value\nis not inside the list, this program will crash,\nbecause i gets greater than the length of the\nlist. For this situation you have other tools\ncontrolling the program flow. These tools are\n<i>continue</i> and <i>break</i>. With <i>break</i>\nyou can get out of any kind of loop. The\nprogram will continue behind the loop. With <i>\ncontinue</i> only the actual iteration will be\nskipped, the loop is continued at the next\niteration (see <i>example4.py</i>). With these\ntools you can implement a search inside a list\neven if the value is not inside the list.\n<br>\nIn python you can also use an <i>else</i> for\nloops like for conditions. If the condition of\nthe loop fails, the <i>else</i>-block will be\nexecuted. But if you leave the loop using <i>\nbreak</i> the <i>else</i>-block will also be\nignored (see <i>example5.py</i>).\n\n<h4>\n    Exercise\n</h4>\n\nIn this exercise you have to search a value\ninside a big list with a while loop. With the\nwhile loop you have to search the value 418\ninside <i>list_2</i> and save its position\ninside the variable <i>position</i>.\n\n</html>\n",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "task3",
+          "files" : {
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [
+                {
+                  "offset" : 669,
+                  "length" : 31,
+                  "possible_answer" : "i = 0\nwhile list_3[i] != 237:\n    x = list_3[i]\n    if x % 2 == 0:\n        list_4.append(x)\n    i += 1",
+                  "placeholder_text" : "Placeholder 1: Insert code here"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "# TODO: type solution here\n\nlist_3 = [\n    951, 402, 984, 651, 360, 69, 408, 319, 601,\n    485, 980, 507, 725, 547, 544, 615, 83, 165,\n    141, 501, 263, 617, 865, 575, 219, 390, 984,\n    592, 236, 105, 942, 941, 386, 462, 47, 418,\n    907, 344, 236, 375, 823, 566, 597, 978, 328,\n    615, 953, 345, 399, 162, 758, 219, 918, 237,\n    412, 566, 826, 248, 866, 950, 626, 949, 687,\n    217, 815, 67, 104, 58, 512, 24, 892, 894,\n    767, 553, 81, 379, 843, 831, 445, 742, 717,\n    958, 609, 842, 451, 688, 753, 854, 685, 93,\n    857, 440, 380, 126, 721, 328, 753, 470, 743,\n    527\n]\n\nlist_4 = []\n\n# Extend list_4 with all even values until\n# 237 from list_3 using a loop.\nPlaceholder 1: Insert code here\n"
+            },
+            "tests.py" : {
+              "name" : "tests.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nimport task as task_file\n\ndef test_answer_placeholders():\n    placeholders = get_answer_placeholders()\n    list_3 = task_file.list_3\n    list_4 = task_file.list_4\n\n    i = 0\n    j = 0\n    if \"while\" in placeholders[0] or \\\n            \"for\" in placeholders[0]:\n        passed()\n    else:\n        failed(\"Use a loop to write values inside list_4!\")\n    if len(list_4) == 22:\n        passed()\n    else:\n        failed(\"Length of list_2 is wrong!\")\n    while list_3[i] != 237:\n        if list_3[i] % 2 == 0:\n            if list_3[i] == list_4[j]:\n                passed()\n            else:\n                failed(\"Values inside list_3 and \" +\n                        \"list_4 are not the same!\")\n            j += 1\n        i += 1\n\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n"
+            }
+          },
+          "description_text" : "<html>\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/KIT_text.png\" alt=\"KIT Logo\" style=\"max-height:100%;width:55%;height:auto;max-width:300px;\">\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/mrt.png\" alt=\"MRT Logo\" style=\"float:right;max-height:100%;width:37.125%;height:auto;max-width:200px;\">\n\n<h1>Python Tutorial for Beginners</h1>\n<h2>\n    Loops\n</h2>\n\n<h4>\n    Exercise\n</h4>\n\nIn this exercise you have to save even values\nof a list inside\nanother list with a loop of your choice. The\nexercise\nis to save all even values until value 237 of\n<i>list_3</i> inside <i>list_4</i>. Therefore\nyou can use a for or a while loop.\n\n<details>\n<summary>Hint for Placeholder 1:</summary>\n<p>Use list_4.append(x) to extend the list.</p>\n</details>\n<details>\n<summary>Hint for Placeholder 1:</summary>\n<p>Use if and modulo operator for check if a value is even.</p>\n</details>\n<details>\n<summary>Hint for Placeholder 1:</summary>\n<p>It is possible to use a for or a while loop.</p>\n</details>\n<details>\n<summary>Hint for Placeholder 1:</summary>\n<p>You can do it like the search examples.</p>\n</details>\n<details>\n<summary>Hint for Placeholder 1:</summary>\n<p>You can also use a for loop with a break statement.</p>\n</details>\n\n<h4>\n    Wrap Up\n</h4>\n\nIn this lesson you got to know the for and the\nwhile loop and some examples of using them. You\nalso learned about the range function, which is\nusually used with for loops. Afterwards <i>\ncontinue</i> and <i>break</i> was explained and\nlast you learned how to use an else-statement\nwith a loop. Now you know the most important tools\nfor controlling the program flow.\n",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "Functions",
+      "task_list" : [
+        {
+          "name" : "task1",
+          "files" : {
+            "example1.py" : {
+              "name" : "example1.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "def sum():\n    a = 2\n    b = 5\n    print(str(a) + \" + \" + str(b) + \" = \" + str(a + b))\n\n\nsum()\nsum()\n"
+            },
+            "example2.py" : {
+              "name" : "example2.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "def sum(a, b):\n    print(str(a) + \" + \" + str(b) + \" = \" + str(a + b))\n\nsum(10, 3)\nsum(20, 13)\n"
+            },
+            "example3.py" : {
+              "name" : "example3.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "def sum(a, b):\n    result = a + b\n    return result\n\n# Save result of function sum inside variable\n# calculated_sum and print it to the console\ncalculated_sum = sum(10, 13)\nprint(\"10 + 13 = \" + str(calculated_sum))\n\n# Save result of function sum inside variable\n# calculated_sum and print it to the console\ncalculated_sum = sum(20, 5)\nprint(\"20 + 5 = \" + str(calculated_sum))\n"
+            },
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [
+                {
+                  "offset" : 85,
+                  "length" : 31,
+                  "possible_answer" : "return a ** 2",
+                  "placeholder_text" : "Placeholder 1: Insert code here"
+                },
+                {
+                  "offset" : 242,
+                  "length" : 31,
+                  "possible_answer" : "return squared(a) + a",
+                  "placeholder_text" : "Placeholder 2: Insert code here"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "# TODO: type solution here\n\ndef squared(a):\n    # Return the squared value of a.\n    Placeholder 1: Insert code here\n\ndef squareAndAdd(a):\n    # Square a using the function\n    # squared(a) and return this value\n    # added by another a.\n    Placeholder 2: Insert code here\n\na = 4\n\nprint(\"a * a = \" + str(squared(a)))\nprint(\"a * a + a = \" + str(squareAndAdd(a)))\n"
+            },
+            "tests.py" : {
+              "name" : "tests.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nimport task as task_file\n\ndef test_answer_placeholders():\n    placeholders = get_answer_placeholders()\n    a = 4\n    b = 10\n    c = 23\n    if task_file.squared(a) == a ** 2:\n        passed()\n    else:\n        failed(\"function squared(a) is wrong!\")\n    if task_file.squared(b) == b ** 2:\n        passed()\n    else:\n        failed(\"function squared(a) is wrong!\")\n    if task_file.squared(c) == c ** 2:\n        passed()\n    else:\n        failed(\"function squared(a) is wrong!\")\n\n    if task_file.squareAndAdd(a) == a ** 2 + a:\n        passed()\n    else:\n        failed(\"function squareAndAdd(a) is wrong!\")\n    if task_file.squareAndAdd(b) == b ** 2 + b:\n        passed()\n    else:\n        failed(\"function squareAndAdd(a) is wrong!\")\n    if task_file.squareAndAdd(c) == c ** 2 + c:\n        passed()\n    else:\n        failed(\"function squareAndAdd(a) is wrong!\")\n\n    if \"squared(a)\" in placeholders[1]:\n        passed()\n    else:\n        failed(\"function squareAndAdd(a) is wrong!\")\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+            }
+          },
+          "description_text" : "<html>\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/KIT_text.png\" alt=\"KIT Logo\" style=\"max-height:100%;width:55%;height:auto;max-width:300px;\">\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/mrt.png\" alt=\"MRT Logo\" style=\"float:right;max-height:100%;width:37.125%;height:auto;max-width:200px;\">\n\n<h1>Python Tutorial for Beginners</h1>\n<h2>\n    Functions\n</h2>\n\nThis lesson is about functions. They are used\nfor structuring your code and to collaborate\nwith other people. Functions can be used\nwithout knowing how they work. Other people\nonly have to know their syntax. One example\nis the range function used for loops. To\ndefine a function you use the keyword <i>\ndef</i> followed by the name of the function,\nparentheses and a colon. Like in loops\neverything with an indent is executed by the\nfunction. To call the function you have to\nwrite the name followed by parentheses (see\n<i>example1.py</i>).\n<br>\n<br>\nLike the range function you can also define\na function with arguments. These arguments\nare defined inside the parentheses (see\n<i>example2.py</i>). A function can also\nreturn results to the program, which uses the\nfunction. In order to do this, you\nhave to use the keyword <i>return</i>. The\nreturned value can also be saved inside\nanother variable (see <i>example3.py</i>).\n\n<h4>\n    Exercise\n</h4>\n\nIn this exercise you have to realize\ntwo functions with a return\nvalue and easy mathematical calculation.\nThe first function\nis called <i>squared(a)</i> and should\nreturn the squared value of <i>a</i>. The second\nis called <i>squareAndAdd(a)</i> and should\nreturn the squared value of <i>a</i> plus <i>a</i>.\nIn order to do this, you have to use the\nfunction <i>squared(a)</i>.\n\n<details>\n<summary>Hint for Placeholder 1:</summary>\n<p>You can use \"**\" to expontiate or you can use \"a * a\"</p>\n</details>\n\n</html>\n",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "task2",
+          "files" : {
+            "example4.py" : {
+              "name" : "example4.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "def sum(a, b):\n    return a + b\n\na = 5\nsum(a)\n"
+            },
+            "example5.py" : {
+              "name" : "example5.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "def division(num, div):\n    print(str(num) + \" / \" + str(div) + \" = \" + str(num / div))\n\na = 15\nb = 3\ndivision(a, b)\ndivision(b, a)\ndivision(div = b, num = a)\n"
+            },
+            "example6.py" : {
+              "name" : "example6.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "def sum(a = 0, b = 0):\n    print(str(a) + \" + \" + str(b) + \" = \" + str(a + b))\n\na = 5\nb = 3\nsum(a, b)\nsum(a)\nsum()\nsum(b = b)\n"
+            },
+            "example7.py" : {
+              "name" : "example7.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "def sum(arg1, arg2, *argList):\n    result = arg1 + arg2\n    text = str(arg1) + \" + \" + str(arg2)\n    for var in argList:\n        result += var\n        text += \" + \" + str(var)\n    text += \" = \"\n    print(text + str(result))\n\nprint(\"Print sum with two arguments:\")\nsum(1, 2)\nprint(\"Print sum with variable length of \" +\n      \"arguments:\")\nsum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)\n"
+            },
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [
+                {
+                  "offset" : 263,
+                  "length" : 31,
+                  "possible_answer" : "i = len(toDoList) + 1\n    if len(args) != 0:\n        for var in args:\n            toDoList.append(str(i) + \". \" + var)\n            i += 1",
+                  "placeholder_text" : "Placeholder 1: Insert code here"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "# TODO: type solution here\n\ntoDoList = []\n\ndef addToDo(*args):\n    # Write a function that takes one or\n    # more toDos as strings. Change the\n    # string with a ongoing number followed\n    # by a dot and add them at the end of\n    # the variable toDoList.\n    Placeholder 1: Insert code here\n\ndef printToDo():\n    if len(toDoList) == 0:\n        print(\"Nothing to do!\")\n    else:\n        print(\"Actual ToDo List:\")\n        for toDo in toDoList:\n            print(toDo)\n\nprintToDo()\n\nprint(\"\")\n\naddToDo(\"Wash dishes!\")\nprintToDo()\n\nprint(\"\")\n\naddToDo(\"Clean living room!\", \"Buy groceries!\")\nprintToDo()\n\nprint(\"\")\n\naddToDo(\"Finish Python Tutorial!\")\nprintToDo()\n"
+            },
+            "tests.py" : {
+              "name" : "tests.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nimport task as task_file\n\ndef test_answer_placeholders():\n    placeholders = get_answer_placeholders()\n\n    toDoList = task_file.toDoList\n    if toDoList[0] == \"1. Wash dishes!\":\n        passed()\n    else:\n        failed(\"function addToDo(*args) is wrong!\")\n    if toDoList[1] == \"2. Clean living room!\":\n        passed()\n    else:\n        failed(\"function addToDo(*args) is wrong!\")\n    if toDoList[2] == \"3. Buy groceries!\":\n        passed()\n    else:\n        failed(\"function addToDo(*args) is wrong!\")\n    if toDoList[3] == \"4. Finish Python Tutorial!\":\n        passed()\n    else:\n        failed(\"function addToDo(*args) is wrong!\")\n\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+            }
+          },
+          "description_text" : "<html>\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/KIT_text.png\" alt=\"KIT Logo\" style=\"max-height:100%;width:55%;height:auto;max-width:300px;\">\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/mrt.png\" alt=\"MRT Logo\" style=\"float:right;max-height:100%;width:37.125%;height:auto;max-width:200px;\">\n\n<h1>Python Tutorial for Beginners</h1>\n<h2>\n    Functions\n</h2>\n\nNow that you know the most important things\nabout functions, there are some special\nknowledge about them to learn. Defining\narguments like explained in <i>example2.py\n</i> means that they are required when\ncalling the function. Otherwise your\nprogram will crash (see <i>example4.py\n</i>). You can also call a function by\nusing the argument's name with an equal\nsign (see <i>example5.py</i>). Additionally\nyou can set default values for your\narguments. That's one possibility not to\nhave calling the function with all\narguments (see <i>example6.py</i>).\nAnother possibility is the use of\nvariable-length arguments. Inside the\nfunction they are used like a list.\nOutside you have to separate the values\nwith a comma (see <i>example7.py</i>).\n\n<h4>\n    Exercise\n</h4>\n\nIn this exercise you have to realize\na function, which append a ToDo list.\n<b>Please only\nedit the placeholders!</b>\nAppend the ToDo list by using\nthe function <i>addToDo(*args)</i>. This\nfunction takes one ore more ToDos and\nappend the variable <i>toDoList</i>. But\nbefore appending the list, the given\nexercise text have to be changed with an\nongoing number followed by a dot and a blank\nat the beginning. So you can see the number\nof the exercise. <b>Note: The ongoing\nnumber starts at 1.</b>\n\n<details>\n<summary>Hint for Placeholder 1:</summary>\n<p>Example:\n    <br />\n    addToDo(\"Go sleeping!\")\n    <br />\n    # toDoList now is [\"Go sleeping!\"]\n    <br />\n    addToDo(\"Go cooking!\")\n    <br />\n    # toDoList now is [\"Go sleeping!\", \"Go cooking!\"]</p>\n</details>\n<details>\n<summary>Hint for Placeholder 1:</summary>\n<p>To get the actual number of toDos use the function len(list).</p>\n</details>\n\n</html>\n",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "task3",
+          "files" : {
+            "example10.py" : {
+              "name" : "example10.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "def power2Direct(n):\n    # Calculate the result of 2 to the\n    # power of n directly\n    return 2 ** n\n\ndef power2Recursive(n):\n    # Calculate the result of 2 to the\n    # power of n recursively\n\n    # Call 1 divided by power2Recursive(-n),\n    # if n is smaller than 0\n    if n < 0:\n        return 1 / power2Recursive(-n)\n    # Condition to abort the recursion\n    elif n == 0:\n        return 1\n    # Call 2 times result of power2Recursive(n - 1),\n    # if n is bigger than 0\n    else:\n        return 2 * power2Recursive(n - 1)\n\nn = 10\nprint(power2Direct(n))\nprint(power2Recursive(n))\n"
+            },
+            "example8.py" : {
+              "name" : "example8.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "result = 0\n\ndef sum(a, b, *args):\n    result = a + b\n    for var in args:\n        result += var\n    print(\"Inside function result is:\")\n    print(result)\n\nsum(3, 8)\nprint(\"Outside function result is:\")\nprint(result)\n"
+            },
+            "example9.py" : {
+              "name" : "example9.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "def appendList1(list, *args):\n    for var in args:\n        list.append(var)\n\nlist = [1, 2, 3]\nprint(\"Print list before usage of function:\")\nprint(list)\nappendList1(list, 4, 5, 6, 7, 8, 9, 10)\nprint(\"Print list after usage of function:\")\nprint(list)\n\nprint(\"\")\n\ndef appendList2(list, *args):\n    list = []\n    for var in args:\n        list.append(var)\n\nlist = [1, 2, 3]\nprint(\"Print list before usage of function:\")\nprint(list)\nappendList2(list, 4, 5, 6, 7, 8, 9, 10)\nprint(\"Print list after usage of function:\")\nprint(list)\n\ndef appendList3(list, *args):\n    list.extend(args)\n\nlist = [1, 2, 3]\nprint(\"Print list before usage of function:\")\nprint(list)\nappendList3(list, 4, 5, 6, 7, 8, 9, 10)\nprint(\"Print list after usage of function:\")\nprint(list)\n"
+            },
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [
+                {
+                  "offset" : 272,
+                  "length" : 31,
+                  "possible_answer" : "if n < 1:\n        return -1\n    elif n == 1:\n        return 1\n    elif n == 2:\n        return 1\n    else:\n        return fibonacci(n - 1) +\\\n            fibonacci(n - 2)",
+                  "placeholder_text" : "Placeholder 1: Insert code here"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "# TODO: type solution here\n\ndef fibonacci(n):\n    # Write a recursive function for the\n    # fibonacci sequence. Return -1 if the\n    # fibonacci sequence is not defined for\n    # a specific n. fibonnaci(0) is not defined,\n    # fibonnaci(1) = 1 and fibonacci(2) = 1.\n    Placeholder 1: Insert code here\n\nprint(fibonacci(10))\nprint(fibonacci(13))\nprint(fibonacci(-5))\n"
+            },
+            "tests.py" : {
+              "name" : "tests.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nimport task as task_file\n\ndef fibonacci(n):\n    if n < 1:\n        return -1\n    elif n == 1:\n        return 1\n    elif n == 2:\n        return 1\n    else:\n        return fibonacci(n - 1) +\\\n            fibonacci(n - 2)\n\ndef test_answer_placeholders():\n    placeholders = get_answer_placeholders()\n\n    if \"fibonacci(n-1)\" in placeholders[0].replace(\" \", \"\") and\\\n            \"fibonacci(n-2)\" in placeholders[0].replace(\" \", \"\"):\n        passed()\n    else:\n        failed(\"function fibonacci(n) have to be recursive!\")\n\n    a = 3\n    b = 12\n    c = -10\n    d = 0\n    if task_file.fibonacci(a) == fibonacci(a):\n        passed()\n    else:\n        failed(\"function fibonacci(n) is wrong!\")\n    if task_file.fibonacci(b) == fibonacci(b):\n        passed()\n    else:\n        failed(\"function fibonacci(n) is wrong!\")\n    if task_file.fibonacci(c) == fibonacci(c):\n        passed()\n    else:\n        failed(\"function fibonacci(n) is wrong!\")\n    if task_file.fibonacci(d) == fibonacci(d):\n        passed()\n    else:\n        failed(\"function fibonacci(n) is wrong!\")\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+            }
+          },
+          "description_text" : "<html>\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/KIT_text.png\" alt=\"KIT Logo\" style=\"max-height:100%;width:55%;height:auto;max-width:300px;\">\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/mrt.png\" alt=\"MRT Logo\" style=\"float:right;max-height:100%;width:37.125%;height:auto;max-width:200px;\">\n\n<h1>Python Tutorial for Beginners</h1>\n<h2>\n    Functions\n</h2>\n\nYou should also know that there are\ndifferences between variables inside\nand outside of a function. Variables\ninside a function can only be used inside\nthis function and not outside. If you\nhave the same variable name inside and\noutside the function, the outside variable\nwill be shadowed by the inside variable. It\nmeans the value outside will not be\nchanged (see <i>example8.py</i>). But if\nyou pass a variable to a function as an\nargument, you can change it value. But\nonly by using other functions like the\nappend functions for lists. If you define\nanother variable with the same name the\neffect of shadowing takes place (see\n<i>example9.py</i>).\n<br>\n<br>\nAnother important type of functions are\nrecursions. A recursive function calls\nitself inside the function. Important is\nthat there always have to be a condition\nto abort the recursion (see <i>\nexample10.py</i>).\n\n<h4>\n    Exercise\n</h4>\n\nIn this exercise you have to realize\na recursive function.\nThis function realizes the fibonacci\nnumbers (see\n<a href=\"https://en.wikipedia.org/wiki/Fibonacci_number\">https://en.wikipedia.org/wiki/Fibonacci_number</a>).\nWe are implementing the version starting\nwith 1. For every number, where the fibonacci\nsequence is not defined, the function should\nreturn -1. For this exercise you have to use\nrecursion, because you have to calculate the\ntwo predecessors of the fibonacci sequence.\n\n<details>\n<summary>Hint for Placeholder 1:</summary>\n<p>Every value less than 1 have to return -1.</p>\n</details>\n\n</html>\n",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "task4",
+          "files" : {
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [
+                {
+                  "offset" : 179,
+                  "length" : 31,
+                  "possible_answer" : "if n < 0:\n        return -1\n    elif n == 0:\n        return 1\n    else:\n        return n * factorialRecursive(n - 1)",
+                  "placeholder_text" : "Placeholder 1: Insert code here"
+                },
+                {
+                  "offset" : 364,
+                  "length" : 31,
+                  "possible_answer" : "if n < 0:\n        return -1\n    elif n == 0:\n        return 1\n    result = 1\n    for i in range(1, n + 1):\n        result *= i\n    return result",
+                  "placeholder_text" : "Placeholder 2: Insert code here"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "# TODO: type solution here\n\ndef factorialRecursive(n):\n    # Write a recursive function that return\n    # the factorial of n. If the factorial is\n    # not defined return -1.\n    Placeholder 1: Insert code here\n\ndef factorialDirect(n):\n    # Write a non-recursive function that\n    # return the factorial of n. If the\n    # factorial is not defined return -1.\n    Placeholder 2: Insert code here\n\nn = 5\n\nprint(factorialRecursive(n))\nprint(factorialDirect(n))\n"
+            },
+            "tests.py" : {
+              "name" : "tests.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nimport task as task_file\n\ndef factorialRecursive(n):\n    if n < 0:\n        return -1\n    elif n == 0:\n        return 1\n    else:\n        return n * factorialRecursive(n - 1)\n\ndef factorialDirect(n):\n    if n < 0:\n        return -1\n    elif n == 0:\n        return 1\n    result = 1\n    for i in range(1, n + 1):\n        result *= i\n    return result\n\ndef test_answer_placeholders():\n    placeholders = get_answer_placeholders()\n\n    a = 3\n    b = 12\n    c = -10\n    d = 0\n    if \"factorialRecursive(n-1)\" in placeholders[0].replace(\n            \" \", \"\"):\n        passed()\n    else:\n        failed(\"function factorialRecursive(n) is not recursive!\")\n\n    if task_file.factorialRecursive(a) == factorialRecursive(a):\n        passed()\n    else:\n        failed(\"function factorialRecursive(n) is wrong!\")\n    if task_file.factorialRecursive(b) == factorialRecursive(b):\n        passed()\n    else:\n        failed(\"function factorialRecursive(n) is wrong!\")\n    if task_file.factorialRecursive(c) == factorialRecursive(c):\n        passed()\n    else:\n        failed(\"function factorialRecursive(n) is wrong!\")\n    if task_file.factorialRecursive(d) == factorialRecursive(d):\n        passed()\n    else:\n        failed(\"function factorialRecursive(n) is wrong!\")\n\n    if \"factorialRecursive\" in placeholders[1] or\\\n            \"factorialDirect\" in placeholders[1]:\n        failed(\"function factorialDirect(n) is recursive!\")\n    else:\n        passed()\n\n    if task_file.factorialDirect(a) == factorialDirect(a):\n        passed()\n    else:\n        failed(\"function factorialDirect(n) is wrong!\")\n    if task_file.factorialDirect(b) == factorialDirect(b):\n        passed()\n    else:\n        failed(\"function factorialDirect(n) is wrong!\")\n    if task_file.factorialDirect(c) == factorialDirect(c):\n        passed()\n    else:\n        failed(\"function factorialDirect(n) is wrong!\")\n    if task_file.factorialDirect(d) == factorialDirect(d):\n        passed()\n    else:\n        failed(\"function factorialDirect(n) is wrong!\")\n\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+            }
+          },
+          "description_text" : "<html>\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/KIT_text.png\" alt=\"KIT Logo\" style=\"max-height:100%;width:55%;height:auto;max-width:300px;\">\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/mrt.png\" alt=\"MRT Logo\" style=\"float:right;max-height:100%;width:37.125%;height:auto;max-width:200px;\">\n\n<h1>Python Tutorial for Beginners</h1>\n<h2>\n    Functions\n</h2>\n\n<h4>\n    Exercise\n</h4>\n\nIn this exercise you have to realize\na recursive functions and one\nnon-recursive function.\nThese two functions realizes a factorial\ncalculation. The first function named <i>\nfactorialRecursive(n)</i> should do this\nusing recursion. The second function named\n<i>factorialDirect(n)</i> should do this\nnon-recursive using a loop. Both functions\nshould return -1 if the factorial is not\ndefined. <b>Note: The factorial of 0 is\n1.</b>\n\n<details>\n<summary>Hint for Placeholder 1:</summary>\n<p>Every value less than 0 have to return -1.</p>\n</details>\n<details>\n<summary>Hint for Placeholder 2:</summary>\n<p>Every value less than 0 have to return -1.</p>\n</details>\n\n\n<h4>\n    Wrap Up\n</h4>\n\nIn this lesson you learned all about\nfunctions. You know how to define them,\ndefine them with arguments and also with\noptional, default and variable-length\narguments. You also got to know how to\ncall a function in different ways. You\nknow about local and global scope, which\nmeans that some variable can only being\nseen inside a function and other over\nthe whole program. Another thing regarding\nto scope is shadowing and you also got to\nknow this concept. The last thing you\nlearned was recursion, an important\nprogramming technique. With this knowledge\nyou are ready to write big programs and\nshare your code with others.\n\n</html>\n",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "Classes",
+      "task_list" : [
+        {
+          "name" : "task1",
+          "files" : {
+            "example1.py" : {
+              "name" : "example1.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "class MyClass:\n    i = 12345\n\n    def do(self):\n        print(\"Do something!\")\n\nx = MyClass()\n\nx.do()\n\nprint(x.i)\n\nx.i = 12\nprint(x.i)\n"
+            },
+            "example2.py" : {
+              "name" : "example2.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "class ComplexNumber:\n    def __init__(self, realpart, imagpart):\n        self.r = realpart\n        self.i = imagpart\n\nx = ComplexNumber(1.0, 3.2)\n\nprint(x.r)\nprint(x.i)\n"
+            },
+            "example3.py" : {
+              "name" : "example3.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "class ComplexNumber:\n    def __init__(self, realpart, imagpart):\n        self.r = realpart\n        self.i = imagpart\n\n    def print(self):\n        print(\"%.1f + %.1fi\" % (self.r, self.i))\n\nx = ComplexNumber(1.0, 3.2)\n\nx.print()\n"
+            },
+            "example4.py" : {
+              "name" : "example4.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "class ComplexNumber:\n    def __init__(self, realpart, imagpart):\n        self.r = realpart\n        self.i = imagpart\n\n    def print(self):\n        print(\"%.1f + %.1fi\" % (self.r, self.i))\n\nx = ComplexNumber()\n"
+            },
+            "example5.py" : {
+              "name" : "example5.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "class ComplexNumber:\n    def __init__(self, realpart, imagpart):\n        self.r = realpart\n        self.i = imagpart\n\n    def __init__(self):\n        self.r = 0.0\n        self.i = 0.0\n\n    def print(self):\n        print(\"%.1f + %.1fi\" % (self.r, self.i))\n\nx = ComplexNumber()\nx.print()\n"
+            },
+            "example6.py" : {
+              "name" : "example6.py",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "class ComplexNumber:\n    def __init__(self, realpart = 0, imagpart = 0):\n        self.r = realpart\n        self.i = imagpart\n\n    def print(self):\n        print(\"%.1f + %.1fi\" % (self.r, self.i))\n\nx = ComplexNumber()\n\nx.print()\n"
+            },
+            "task.py" : {
+              "name" : "task.py",
+              "placeholders" : [
+                {
+                  "offset" : 421,
+                  "length" : 31,
+                  "possible_answer" : "i = self.length\n        i += 1\n        self.tasks.append(str(i) + \". \" + task)\n        for var in tasks:\n            i += 1\n            self.tasks.append(str(i) + \". \" + var)\n\n        self.length = i",
+                  "placeholder_text" : "Placeholder 1: Insert code here"
+                },
+                {
+                  "offset" : 697,
+                  "length" : 31,
+                  "possible_answer" : "if self.length == 0:\n            print(\"Nothing to do!\")\n        else:\n            print(\"Actual ToDoList:\")\n            for task in self.tasks:\n                print(task)",
+                  "placeholder_text" : "Placeholder 2: Insert code here"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "# TODO: type solution here\n\nclass ToDoList:\n\n    def __init__(self):\n        self.length = 0\n        self.tasks = []\n\n    def addTask(self, task, *tasks):\n        # Add one ore more tasks to self.tasks.\n        # Before adding the desciption, write\n        # the number of the task you want to add\n        # followed by a dot and a blank.\n        # Note: self.length always have to be\n        # the right length.\n        Placeholder 1: Insert code here\n\n    def print(self):\n        # Print the tasks. If the list is empty\n        # print \"Nothing to do!\" otherwise print\n        # \"Actual ToDoList:\" followed by the tasks.\n        # Note: The wording has to be exact like\n        # here.\n        Placeholder 2: Insert code here\n\nmyToDoList = ToDoList()\nmyToDoList.print()\n\nprint(\"\")\n\nmyToDoList.addTask(\"Wash dishes!\")\nmyToDoList.print()\n\nprint(\"\")\n\nmyToDoList.addTask(\"Clean living room!\", \"Buy groceries!\")\nmyToDoList.print()\n\nprint(\"\")\n\nmyToDoList.addTask(\"Finish Python Tutorial!\")\nmyToDoList.print()\n\nprint(\"\")\n\nprint(\"Length of actual ToDoList is %d\" % myToDoList.length)\nprint(\"Length of actual ToDoList is %d\" % len(myToDoList.tasks))\n"
+            },
+            "tests.py" : {
+              "name" : "tests.py",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nimport task as task_file\nimport sys\nfrom io import StringIO\n\ndef test_answer_placeholders():\n    placeholders = get_answer_placeholders()\n    try:\n        old = sys.stdout\n        s = StringIO()\n        sys.stdout = s\n\n        myToDoList = task_file.ToDoList()\n\n        length = myToDoList.length\n        tasks = myToDoList.tasks\n        myToDoList.print()\n        sys.stdout = old\n        outputs = s.getvalue().splitlines()\n\n        if length == 0:\n            passed()\n        else:\n            failed(\"The length of ToDoList is wrong!\")\n        if len(tasks) == 0:\n            passed()\n        else:\n            failed(\"The length of tasks is wrong!\")\n        if outputs[0] == \"Nothing to do!\":\n            passed()\n        else:\n            failed(\"Print function is wrong!\")\n\n        myToDoList.addTask(\"Wash dishes!?!\")\n\n        s = StringIO()\n        sys.stdout = s\n        length = myToDoList.length\n        tasks = myToDoList.tasks\n        myToDoList.print()\n        sys.stdout = old\n        outputs = s.getvalue().splitlines()\n\n        if length == 1:\n            passed()\n        else:\n            failed(\"The length of ToDoList is wrong!\")\n        if len(tasks) == 1:\n            passed()\n        else:\n            failed(\"The length of tasks is wrong!\")\n        if tasks[0] == \"1. Wash dishes!?!\":\n            passed()\n        else:\n            failed(\"Content of tasks is wrong!\")\n        if outputs[0] == \"Actual ToDoList:\":\n            passed()\n        else:\n            failed(\"Print function is wrong!\")\n        if outputs[1] == \"1. Wash dishes!?!\":\n            passed()\n        else:\n            failed(\"Print function is wrong!\")\n\n        myToDoList.addTask(\"Clean living room!?!\",\n                           \"Buy groceries!?!\")\n\n        s = StringIO()\n        sys.stdout = s\n        length = myToDoList.length\n        tasks = myToDoList.tasks\n        myToDoList.print()\n        sys.stdout = old\n        outputs = s.getvalue().splitlines()\n\n        if length == 3:\n            passed()\n        else:\n            failed(\"The length of ToDoList is wrong!\")\n        if len(tasks) == 3:\n            passed()\n        else:\n            failed(\"The length of tasks is wrong!\")\n        if tasks[0] == \"1. Wash dishes!?!\":\n            passed()\n        else:\n            failed(\"Content of tasks is wrong!\")\n        if tasks[1] == \"2. Clean living room!?!\":\n            passed()\n        else:\n            failed(\"Content of tasks is wrong!\")\n        if tasks[2] == \"3. Buy groceries!?!\":\n            passed()\n        else:\n            failed(\"Content of tasks is wrong!\")\n        if outputs[0] == \"Actual ToDoList:\":\n            passed()\n        else:\n            failed(\"Print function is wrong!\")\n        if outputs[1] == \"1. Wash dishes!?!\":\n            passed()\n        else:\n            failed(\"Print function is wrong!\")\n        if outputs[2] == \"2. Clean living room!?!\":\n            passed()\n        else:\n            failed(\"Print function is wrong!\")\n        if outputs[3] == \"3. Buy groceries!?!\":\n            passed()\n        else:\n            failed(\"Print function is wrong!\")\n\n        myToDoList.addTask(\"Finish Python Tutorial!?!\")\n\n        s = StringIO()\n        sys.stdout = s\n        length = myToDoList.length\n        tasks = myToDoList.tasks\n        myToDoList.print()\n        sys.stdout = old\n        outputs = s.getvalue().splitlines()\n\n        if length == 4:\n            passed()\n        else:\n            failed(\"The length of ToDoList is wrong!\")\n        if len(tasks) == 4:\n            passed()\n        else:\n            failed(\"The length of tasks is wrong!\")\n        if tasks[0] == \"1. Wash dishes!?!\":\n            passed()\n        else:\n            failed(\"Content of tasks is wrong!\")\n        if tasks[1] == \"2. Clean living room!?!\":\n            passed()\n        else:\n            failed(\"Content of tasks is wrong!\")\n        if tasks[2] == \"3. Buy groceries!?!\":\n            passed()\n        else:\n            failed(\"Content of tasks is wrong!\")\n        if tasks[3] == \"4. Finish Python Tutorial!?!\":\n            passed()\n        else:\n            failed(\"Content of tasks is wrong!\")\n        if outputs[0] == \"Actual ToDoList:\":\n            passed()\n        else:\n            failed(\"Print function is wrong!\")\n        if outputs[1] == \"1. Wash dishes!?!\":\n            passed()\n        else:\n            failed(\"Print function is wrong!\")\n        if outputs[2] == \"2. Clean living room!?!\":\n            passed()\n        else:\n            failed(\"Print function is wrong!\")\n        if outputs[3] == \"3. Buy groceries!?!\":\n            passed()\n        else:\n            failed(\"Print function is wrong!\")\n        if outputs[4] == \"4. Finish Python Tutorial!?!\":\n            passed()\n        else:\n            failed(\"Print function is wrong!\")\n\n    except:\n        failed(\"Your class doesn't work like expected!\")\n    else:\n        passed()\n\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+            }
+          },
+          "description_text" : "<html>\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/KIT_text.png\" alt=\"KIT Logo\" style=\"max-height:100%;width:55%;height:auto;max-width:300px;\">\n<img src=\"https://www.mrt.kit.edu/orzechowskiweb/mrt.png\" alt=\"MRT Logo\" style=\"float:right;max-height:100%;width:37.125%;height:auto;max-width:200px;\">\n\n<h1>Python Tutorial for Beginners</h1>\n<h2>\n    Classes\n</h2>\n\nIn this lesson you got to know the basics\nabout classes. There is much more to know\nabout classes, but it is not relevant for\nsolving the practical course.\n<br>\nA class is like a template for same things.\nIt's like we have a car. Every car has the\nsame attributes, but they can differ in\ntheir values. For example has every car a\nbrand and a color. But they can be\ndifferent for each car. Therefor we are\nusing classes. The specific car in\nprogramming language is called an object of\nthe class.\n<br>\n<br>\nNow we start with the first example (see\n<i>example1.py</i>). Here we have the\nclass <i>MyClass</i> with the attribute\n<i>i</i> and a function <i>do</i>. For\ninstancing an object you use the class\nname followed by parentheses. Here the\nvariable name of the object is <i>x</i>.\nYou can use the defined function of the\nclass by using a dot after the object\nname followed by the name of the function.\nDon't forget the parentheses. You can do\nthe same with attributes and also for\nchanging the value. You might have\nmentioned the word <i>self</i> as a function\nargument. You always have to write self\nas first argument in any kind of class\nfunction. As well as by defining\nconstructors. A\nconstructor is a special class function\nfor initializing an object of the class\n(see <i>example2.py</i>. The name of\nthese constructors always have to be\n<i>__init__</i>.\n<br>\n<br>\nIt is also possible to work with the\nattributes inside a class function.\nTherefor you also use the <i>self</i>\nargument (see <i>example3.py</i>).\nSometimes you don't want to set\nall attributes of an object instantly.\nThe first idea is to create an object\nby using parentheses with nothing\ninside (see <i>example4.py</i>). But\nthat's not working. Therefor you have\nto define a second constructor (see\n<i>example5.py</i>) or you can also\nset default values, like you learned in\nthe lesson <i>Functions</i> (see\n<i>example6.py</i>). It is also possible\nto call arguments by name and to have\nvariable-length arguments like you use\nthem with functions.\nThat are the basics of classes. Now\nyou are ready for the exercise.\n\n<h4>\n    Exercise\n</h4>\n\nIn this exercise you have to add\nfunctions to the class <i>ToDoList</i>.\nthe first function is named\n<i>addTask</i>. This functions takes\none ore more tasks and add them to the\ntask list named <i>tasks</i>. Before\nadding them you have to numerate them\ninside the function. After the number\nyou write a dot and a blank than the\ndescription giving by the argument.\n<b>Note: The ongoing number starts\nat 1.</b>\nYou also have to make sure that the\nlength of the ToDoList is always\ncorrect. The second function is for\nprinting the ToDoList. If the list\nis empty print \"Nothing to do!\"\notherwise print \"Actual ToDoList:\"\nfollowed by the tasks. For each\ntask use a new line.\n\n<details>\n<summary>Hint for Placeholder 1:</summary>\n<p>Example:\n    <br />\n    addTask(\"Go sleeping!\")\n    <br />\n    # self.tasks now is [\"Go sleeping!\"]\n    <br />\n    addTask(\"Go cooking!\")\n    <br />\n    # self.tasks now is [\"Go sleeping!\", \"Go cooking!\"]</p>\n</details>\n<details>\n<summary>Hint for Placeholder 1:</summary>\n<p>Use self.length to know which number the task has.</p>\n</details>\n\n<h4>\n    Wrap Up\n</h4>\n\nIn this lesson you got to know the\nbasics about classes. You can define\nthem, call functions and work with\ntheir attributes. After this lessons\nyou also know all basics for the\npractical course. Have fun!\n\n</html>\n",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "lesson"
+    }
+  ],
+  "additional_files" : [
+    {
+      "name" : "test_helper.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import sys\n\n\ndef get_file_text(path):\n    \"\"\" Returns file text by path\"\"\"\n    file_io = open(path, \"r\")\n    text = file_io.read()\n    file_io.close()\n    return text\n\n\ndef get_file_output(encoding=\"utf-8\", path=sys.argv[-1], arg_string=\"\"):\n    \"\"\"\n    Returns answer file output\n    :param encoding: to decode output in python3\n    :param path: path of file to execute\n    :return: list of strings\n    \"\"\"\n    import subprocess\n\n    proc = subprocess.Popen([sys.executable, path], stdin=subprocess.PIPE, stdout=subprocess.PIPE,\n                            stderr=subprocess.STDOUT)\n    if arg_string:\n        for arg in arg_string.split(\"\\n\"):\n            proc.stdin.write(bytearray(str(arg) + \"\\n\", encoding))\n            proc.stdin.flush()\n\n    return list(map(lambda x: str(x.decode(encoding)), proc.communicate()[0].splitlines()))\n\n\ndef test_file_importable():\n    \"\"\" Tests there is no obvious syntax errors\"\"\"\n    path = sys.argv[-1]\n    if not path.endswith(\".py\"):\n        import os\n\n        parent = os.path.abspath(os.path.join(path, os.pardir))\n        python_files = [f for f in os.listdir(parent) if os.path.isfile(os.path.join(parent, f)) and f.endswith(\".py\")]\n        for python_file in python_files:\n            if python_file == \"tests.py\":\n                continue\n            check_importable_path(os.path.join(parent, python_file))\n        return\n    check_importable_path(path)\n\n\ndef check_importable_path(path):\n    \"\"\" Checks that file is importable.\n        Reports failure otherwise.\n    \"\"\"\n    saved_input = patch_input()\n    try:\n        import_file(path)\n    except:\n        failed(\"The file contains syntax errors\", test_file_importable.__name__)\n        return\n    finally:\n        revert_input(saved_input)\n\n    passed(test_file_importable.__name__)\n\n\ndef patch_input():\n    def mock_fun(_m=\"\"):\n        return \"mock\"\n\n    if sys.version_info[0] == 3:\n        import builtins\n        save_input = builtins.input\n        builtins.input = mock_fun\n        return save_input\n    elif sys.version_info[0] == 2:\n        import __builtin__\n        save_input = __builtin__.raw_input\n        __builtin__.raw_input = mock_fun\n        __builtin__.input = mock_fun\n        return save_input\n\n\ndef revert_input(saved_input):\n    if sys.version_info[0] == 3:\n        import builtins\n        builtins.input = saved_input\n    elif sys.version_info[0] == 2:\n        import __builtin__\n        __builtin__.raw_input = saved_input\n        __builtin__.input = saved_input\n\n\ndef import_file(path):\n    \"\"\" Returns imported file \"\"\"\n    if sys.version_info[0] == 2 or sys.version_info[1] < 3:\n        import imp\n\n        return imp.load_source(\"tmp\", path)\n    elif sys.version_info[0] == 3:\n        import importlib.machinery\n\n        return importlib.machinery.SourceFileLoader(\"tmp\", path).load_module(\"tmp\")\n\n\ndef import_task_file():\n    \"\"\" Returns imported file.\n        Imports file from which check action was run\n    \"\"\"\n    path = sys.argv[-1]\n    return import_file(path)\n\n\ndef test_is_not_empty():\n    \"\"\"\n        Checks that file is not empty\n    \"\"\"\n    path = sys.argv[-1]\n    file_text = get_file_text(path)\n\n    if len(file_text) > 0:\n        passed()\n    else:\n        failed(\"The file is empty. Please, reload the task and try again.\")\n\n\ndef test_text_equals(text, error_text):\n    \"\"\"\n        Checks that answer equals text.\n    \"\"\"\n    path = sys.argv[-1]\n    file_text = get_file_text(path)\n\n    if file_text.strip() == text:\n        passed()\n    else:\n        failed(error_text)\n\n\ndef test_answer_placeholders_text_deleted(error_text=\"Don't just delete task text\"):\n    \"\"\"\n        Checks that all answer placeholders are not empty\n    \"\"\"\n    windows = get_answer_placeholders()\n\n    for window in windows:\n        if len(window) == 0:\n            failed(error_text)\n            return\n    passed()\n\n\ndef set_congratulation_message(message):\n    \"\"\" Overrides default 'Congratulations!' message \"\"\"\n    print(\"#educational_plugin CONGRATS_MESSAGE \" + message)\n\n\ndef failed(message=\"Please, reload the task and try again.\", name=None):\n    \"\"\" Reports failure \"\"\"\n    if not name:\n        name = sys._getframe().f_back.f_code.co_name\n    print(\"#educational_plugin \" + name + \" FAILED + \" + message)\n\n\ndef passed(name=None):\n    \"\"\" Reports success \"\"\"\n    if not name:\n        name = sys._getframe().f_back.f_code.co_name\n    print(\"#educational_plugin \" + name + \" test OK\")\n\n\ndef get_answer_placeholders():\n    \"\"\"\n        Returns all answer placeholders text\n    \"\"\"\n    prefix = \"#educational_plugin_window = \"\n    path = sys.argv[-1]\n    import os\n\n    file_name_without_extension = os.path.splitext(path)[0]\n    windows_path = file_name_without_extension + \"_windows\"\n    windows = []\n    f = open(windows_path, \"r\")\n    window_text = \"\"\n    first = True\n    for line in f.readlines():\n        if line.startswith(prefix):\n            if not first:\n                windows.append(window_text.strip())\n            else:\n                first = False\n            window_text = line[len(prefix):]\n        else:\n            window_text += line\n\n    if window_text:\n        windows.append(window_text.strip())\n\n    f.close()\n    return windows\n\n\ndef check_samples(samples=()):\n    \"\"\"\n      Check script output for all samples. Sample is a two element list, where the first is input and\n      the second is output.\n    \"\"\"\n    for sample in samples:\n        if len(sample) == 2:\n            output = get_file_output(arg_string=str(sample[0]))\n            if \"\\n\".join(output) != sample[1]:\n                failed(\n                    \"Test from samples failed: \\n \\n\"\n                    \"Input:\\n{}\"\n                    \"\\n \\n\"\n                    \"Expected:\\n{}\"\n                    \"\\n \\n\"\n                    \"Your result:\\n{}\".format(str.strip(sample[0]), str.strip(sample[1]), \"\\n\".join(output)))\n                return\n        set_congratulation_message(\"All test from samples passed. Now we are checking your solution on Stepik server.\")\n\n    passed()\n\n\ndef run_common_tests(error_text=\"Please, reload file and try again\"):\n    test_is_not_empty()\n    test_answer_placeholders_text_deleted()\n    test_file_importable()\n"
+    }
+  ],
+  "version" : 11
+}
